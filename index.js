@@ -1,18 +1,6 @@
 "use strict";
 
 module.exports = {
-  isDesktop: function(ua) {
-    return !(/mobile/i.test(ua));
-  },
-
-  isMobile: function(ua) {
-    return (/mobile/i.test(ua));
-  },
-
-  getCurrentDevice: function(ua) {
-    return (/mobile/i.test(ua)) ? 'mobile' : 'desktop';
-  },
-
   isYear: function(year) {
     return (typeof(year) !== "undefined" && year.length === 4 && !isNaN(year));
   },
@@ -23,6 +11,18 @@ module.exports = {
 
   isDay: function(day) {
     return (typeof(day) !== "undefined" && day.length === 2 && !isNaN(day) && day <= 31);
+  },
+
+  isDesktop: function(ua) {
+    return !(/mobile/i.test(ua));
+  },
+
+  isMobile: function(ua) {
+    return (/mobile/i.test(ua));
+  },
+
+  getCurrentDevice: function(ua) {
+    return (/mobile/i.test(ua)) ? 'mobile' : 'desktop';
   },
 
   isDefined: function(variable) {
