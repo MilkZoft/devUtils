@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "devUtils",
   "version": "1.0.0",
   "description": "Utils functions",
   "main": "index.js",
